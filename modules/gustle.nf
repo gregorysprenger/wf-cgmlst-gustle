@@ -47,7 +47,7 @@ process GUSTLE_GENOTYPE {
         touch summary.tsv
 
         gustle genotype \
-        --index $PWD/results/out.gus \
+        --index out.gus \
         ${genome} \
         > summary.tsv
 

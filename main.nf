@@ -7,7 +7,7 @@ def helpMessage() {
     ========================================
 
     Usage:
-    
+    nextflow run -profile docker main.nf --cgst <path/test.cgst> --query <path/test_query.fa.gz> --genome <path/test_cgst.fa> --outpath <results/>
 
     Parameters:
         --cgst              Path to cgST file.
