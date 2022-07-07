@@ -35,11 +35,13 @@ module load nextflow
 # Run workflow
 Example data are included in example_input directory. Data is from [gustle](https://github.com/supernifty/gustle) repo.
 
+Note: To run on Aspen, full path to files are needed. 
+
 ```
 nextflow run \
--profile docker main.nf \
-    --cgst example_input/test.cgst \
-    --query example_input/test_query.fa.gz \
-    --genome example_input/test_cgst.fa \
-    --outpath results/
+-profile singularity main.nf \
+    --cgst $PWD/example_input/test.cgst \
+    --query $PWD/example_input/test_query.fa.gz \
+    --genome $PWD/example_input/test_cgst.fa \
+    --outpath results
 ```
